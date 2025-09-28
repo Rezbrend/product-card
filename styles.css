@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.head {
+  margin: 0 auto;
+  padding-left: 25px;
+  width: 340px;
+  height: 573px;
+  background-color: #f1f1f1;
+  
+}
+
+.photo {
+  margin: 25px 25px 25px 0; 
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+  color: #515076
+}
+
+.points {
+  width: 252px;
+  height: 87px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.compound-list{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.price {
+  margin-top: 25px;
+  width: 290px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.name {
+ font-weight: 700;
+  font-size: 20px;
+  line-height: 135%;
+  margin-bottom: 5px;
+  color: #515076;
+}
+
+.price-name{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #515076;
+}
+
+.price_1{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #515076;
+}
+
+.description {
+  height: 36px; width: 287px;
+}
+.fz12{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  text-transform: uppercase;
+  color: #a5a3b9;
+}
+
+.fz13{
+  font-size: 13px;
+}
