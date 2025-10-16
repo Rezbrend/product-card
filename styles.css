@@ -65,7 +65,7 @@
   padding-top: 15px;
 }
 
-.block {
+.cards {
   display: inline-block;
 }
 
@@ -83,14 +83,15 @@
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
-  background-position: top -0px left 85px;
+  background-position: 85px -75px;
   width: 1280px;
   background-image: url(/assets/flowers.png);
   background-size: 790px 697px;
 }
 
 .title {
-  margin-top: 220px;
+  margin-top: 0px;
+  padding-top: 220px;
   text-align: center;
   font-size: 70px;
   line-height: 78px;
