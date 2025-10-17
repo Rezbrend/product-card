@@ -65,7 +65,7 @@
   padding-top: 15px;
 }
 
-.cards {
+.card {
   display: inline-block;
 }
 
@@ -85,7 +85,7 @@
   background-repeat: no-repeat;
   background-position: 85px -75px;
   width: 1280px;
-  background-image: url(/assets/flowers.png);
+  background-image: url("/assets/bg-flowers.png");
   background-size: 790px 697px;
 }
 
