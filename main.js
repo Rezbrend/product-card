@@ -46,8 +46,7 @@ function outputConsoleLog(message) {
 
 // Вывод заголовка в консоль
 
-const title = document.querySelector('.title')
-const outputLogTitle = document.querySelector('#output-log-title');
+const outputLogTitle = document.querySelector('.title');
 
 outputLogTitle.addEventListener('mouseover', () => outputConsoleLog('Выбери свой продукт'))
 
@@ -60,8 +59,5 @@ function outputConsoleLog(message) {
 const changeColorButton = document.querySelector('#change-color-button')
 
 changeColorButton.addEventListener('click', () => {
-  changeColorButton.classList.toggle('end-button');
+  changeColorButton.classList.toggle('bg-button-5');
 });
-
-
-
