@@ -59,5 +59,5 @@ function outputConsoleLog(message) {
 const changeColorButton = document.querySelector('#change-color-button')
 
 changeColorButton.addEventListener('click', () => {
-  changeColorButton.classList.toggle('bg-button-5');
+  changeColorButton.classList.toggle('bg-yellow');
 });
