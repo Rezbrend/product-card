@@ -4,8 +4,8 @@ function showCityTemperature(city, temperature) {
   console.log(`Сейчас в ${city} температура ${temperature} градусов по Цельсию`)
 }
 
-  showCityTemperature ('Москве', '25')
-  
+showCityTemperature('Москве', '25')
+
 // 4. Создать переменную, которая хранит внутри себя скорость звука
 
 const SPEED_OF_SOUND = 343
@@ -44,7 +44,7 @@ function showPower (power) {
   console.log(`У Ауди мощность ${power} сил`)
 }
 
-showPower ('250')
+showPower('250')
 
 // 7. Создать 3 переменных (без разницы каких) и именовать их по своему усмотрению
 
