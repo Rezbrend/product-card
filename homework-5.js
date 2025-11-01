@@ -27,7 +27,7 @@ compareTransmittedSpeed('100')
 const product = 'Телефон'
 const price = '5000'
 
-function checkBudget(budget) {
+function buyProduct(budget) {
 if (budget >= price) {
   console.log(`${product} приобретён. Спасибо за покупку!`)
 } else {
@@ -36,7 +36,7 @@ if (budget >= price) {
 }
 }
 
-checkBudget('3000')
+buyProduct('3000')
 
 // 6. Создать 1 функцию и именовать её по своему усмотрению
 
