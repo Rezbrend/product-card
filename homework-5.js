@@ -10,7 +10,7 @@ showCityTemperature('Москве', '25')
 
 const SPEED_OF_SOUND = 343
 
-function showTransmittedSpeed(speed) {
+function compareTransmittedSpeed(speed) {
 if (speed > SPEED_OF_SOUND) {
   console.log("Сверхзвуковая скорость");
 } else if (speed < SPEED_OF_SOUND) {
@@ -20,14 +20,14 @@ if (speed > SPEED_OF_SOUND) {
 }
 }
 
-showTransmittedSpeed('100')
+compareTransmittedSpeed('100')
 
 // 5. Создать переменную №1, которая содержит продукт и переменную №2, которая содержит его цену (на ваше усмотрение).
 
 const product = 'Телефон'
 const price = '5000'
 
-function calculateCostProduct(budget) {
+function checkBudget(budget) {
 if (budget >= price) {
   console.log(`${product} приобретён. Спасибо за покупку!`)
 } else {
@@ -36,18 +36,18 @@ if (budget >= price) {
 }
 }
 
-calculateCostProduct('3000')
+checkBudget('3000')
 
 // 6. Создать 1 функцию и именовать её по своему усмотрению
 
-function showPower (power) {
-  console.log(`У Ауди мощность ${power} сил`)
+function showPowerCar(car, power) {
+  console.log(`У ${car} мощность ${power} сил`)
 }
 
-showPower('250')
+showPowerCar('BMW','250')
 
 // 7. Создать 3 переменных (без разницы каких) и именовать их по своему усмотрению
 
-const boilingPointOfWater = 'температура кипения воды'
+const temperatureBoilWater = '100'
 let age = 20
-var hello = 'hello world'
+let carColor = 'зелёный'
