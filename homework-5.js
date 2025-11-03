@@ -25,7 +25,7 @@ compareTransmittedSpeed('100')
 // 5. Создать переменную №1, которая содержит продукт и переменную №2, которая содержит его цену (на ваше усмотрение).
 
 const product = 'Телефон'
-const price = '5000'
+const price = 5000
 
 function buyProduct(budget) {
 if (budget >= price) {
@@ -36,7 +36,7 @@ if (budget >= price) {
 }
 }
 
-buyProduct('3000')
+buyProduct(3000)
 
 // 6. Создать 1 функцию и именовать её по своему усмотрению
 
@@ -48,6 +48,6 @@ showPowerCar('BMW','250')
 
 // 7. Создать 3 переменных (без разницы каких) и именовать их по своему усмотрению
 
-const temperatureBoilWater = '100'
+const temperatureBoilWater = 100
 let age = 20
 let carColor = 'зелёный'
