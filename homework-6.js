@@ -32,10 +32,10 @@ checkSpeed(car)
 
 // 6. Написать функцию, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
 
-const getObjectAndProperty = (object,property) => {
+const getObjectValue = (object,property) => {
   return object[property];
 }
-console.log(getObjectAndProperty(car,'color'))
+console.log(getObjectValue(car,'color'))
 
 // 7. Создать массив, который содержит названия продуктов (просто строки)
 
