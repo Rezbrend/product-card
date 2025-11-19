@@ -43,29 +43,26 @@ const updatedPostId = commentsSocialNetwork.map(comment => ({
 
 // 9. Перебрать массив, что бы объекты состояли только из айди и имени
 
-const arrayIdName = commentsSocialNetwork.map(comment => {
-  return {
-    id: comment.id,
-    name: comment.name
-}
-})
+const arrayIdName = commentsSocialNetwork.map(comment => ({
+  id: comment.id,
+  name: comment.name
+}))
 
 // 10. Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
 
-const addIsInvalid = commentsSocialNetwork.map(comment => {
-  return {
-    isInvalid: comment.body.length > 180
-}
-})
+const addIsInvalid = commentsSocialNetwork.map(comment => ({
+  ...comment,
+  isInvalid: comment.body.length > 180
+}))
 
 // 11. Почитать про метод массива reduce. Используя его, вывести массив почт и провернуть тоже самое с помощью метода map
 
-const sumEmails = commentsSocialNetwork.reduce(function (sum, comment) {
-  return sum + comment.email
-})
+const sumEmails = commentsSocialNetwork.reduce((sum, comment) => [...sum, comment.email], [])
+
 console.log(sumEmails)
 
-const allEmails = commentsSocialNetwork.map(sum => sum.email)
+const allEmails = commentsSocialNetwork.map(comment => comment.email)
+
 console.log(allEmails)
 
 // 12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
