@@ -101,3 +101,36 @@
 .bg-yellow {
   background-color: yellow;
 }
+
+#product-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 110px 85px 116px 85px;
+  justify-content: center;
+  row-gap: 45px;
+  column-gap: 45px;
+}
+
+.product-container {
+  width: 340px;
+  height: 573px;
+  padding: 25px;
+  background-color: #F7F7FA;
+  box-shadow: 2px 2px 10px 0px #5150761A;
+}
+
+.product-compound-item-1 {
+  margin-left: 14px;
+  margin-bottom: 5px;
+}
+
+.product-compound-item-2 {
+  margin-left: 14px;
+  margin-bottom: 5px;
+}
+
+.product-compound-item-3 {
+  margin-left: 14px;
+  margin-bottom: 5px;
+}
