@@ -101,3 +101,9 @@
 .bg-yellow {
   background-color: yellow;
 }
+
+.product-compound-list {
+  margin-left: 14px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
