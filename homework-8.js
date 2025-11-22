@@ -8,18 +8,16 @@ const productList = document.getElementById('product-list');
 const displaySelectedProductCards = (productCards) => {
 productCards.forEach(productCard => {
   const productCardClone = productTemplate.content.cloneNode(true);
-  productCardClone.querySelector('.product-image').src = `/assets/${productCard.img}`
+  productCardClone.querySelector('.product-image').src = `/assets/${productCard.img}.png`
   productCardClone.querySelector('.product-category').textContent = productCard.category
   productCardClone.querySelector('.product-name').textContent = productCard.name
   productCardClone.querySelector('.product-description').textContent = productCard.description
-  productCardClone.querySelector('.product-compound').textContent  = 'Состав:';
   const productCompoundList = productCardClone.querySelector('.product-compound-list')
   productCard.compound.forEach(item => {
     const li = document.createElement("li");
     li.textContent = item;
     productCompoundList.appendChild(li);
   });
-  productCardClone.querySelector('.product-price-label').textContent = 'Цена'
   productCardClone.querySelector('.product-price').innerHTML = `${productCard.price} &#8381`
   productList.appendChild(productCardClone)
   console.log(productList)
