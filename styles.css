@@ -199,6 +199,8 @@
 
 .line-website {
   margin-top: 206px;
+  width: 66px;
+  margin-left: 205px;
 }
 
 .website {
@@ -215,7 +217,7 @@
   margin-top: 20px;
 }
 
-.social-links li a{
+.social-links li a {
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
@@ -298,14 +300,14 @@
   cursor: pointer;
 }
 
-label {
+.auth-lbl {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
   color: #333;
 }
 
-input {
+.auth-input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -314,7 +316,7 @@ input {
   font-size: 14px;
 }
 
-#message {
+.message {
   margin-top: 15px;
   text-align: center;
   font-weight: bold;

@@ -151,13 +151,13 @@
     <button class="close-btn">&times;</button>
     <h2>Вход в систему</h2>
     <form id="loginForm">
-      <label for="login">Логин:</label>
-      <input type="text" id="login" name="login" required>
-      <label for="password">Пароль:</label>
-      <input type="password" id="password" name="password" required>
+      <label for="login" class="auth-lbl">Логин:</label>
+      <input type="text" id="login" name="login" class="auth-input" required>
+      <label for="password" class="auth-lbl">Пароль:</label>
+      <input type="password" id="password" name="password" class="auth-input" required>
       <button type="submit">Войти</button>
     </form>
-    <div id="message"></div>
+    <div id="message" class="message"></div>
   </div>
 </div>
 
@@ -180,7 +180,7 @@
           <hr class="line-btn">
           <button class="form-button" type="submit">Подписаться</button>
         </div>
-      <img src="/assets/line-website.svg" class="line-website">
+      <hr class="line-website">
       <p class="website">www.product-cards©all right reserve</p>
     </form>
     <nav class="footer-right">
@@ -198,6 +198,6 @@
   <script src="homework-6.js"></script>
   <script type="module" src="homework-7.js"></script>
   <script type="module" src="homework-8.js"></script>
-  <script type="module" src="homework-9.js"></script>
+  <script src="homework-9.js"></script>
 </body>
 </html>
