@@ -16,7 +16,7 @@ emailForm.addEventListener('submit', (event) => {
 // 5. Создать форму для регистрации. Она должна содержать поля: имя, фамилия, дата рождения, логин, пароль, повторение пароля.
 // 6. Сохраняем этот объект в переменную для дальнейшего использования.
 
-const registrationForm = document.querySelector('#registration-form')
+const registrationForm = document.querySelector('#regForm')
 registrationForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const form = event.target;
