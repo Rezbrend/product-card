@@ -3,7 +3,7 @@ import './homework-5.js'
 import './homework-6.js'
 import './homework-7.js'
 import './homework-8.js'
-//import './homework-9.js'
+import './homework-9.js'
 import {Modal} from './homework-10/modal.js';
 import {Form} from './homework-10/form.js';
 import {Car, GybridCar} from './homework-10/car.js';
