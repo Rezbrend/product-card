@@ -108,25 +108,25 @@
       </li>
     </ul>
   </div>
-    <ul id="product-list" class="card-list-container"></ul>
-    <template id="product-card-template">
-      <li class="card-container">
-        <img class="product-image" width="290" height="245" alt="">
-        <span class="product-category"></span>
-        <p class="product-name"></p>
-        <p class="product-description"></p>
-        <span class="product-compound">Состав:</span>
-          <ul class="product-compound-list"></ul>
-          <div class="product-price-container">
-            <span class="product-price-label">Цена</span>
-            <span class="product-price"></span>
-          </div>
-      </li>
-    </template>
+  <ul id="product-list" class="card-list-container"></ul>
+  <template id="product-card-template">
+    <li class="card-container">
+      <img class="product-image" width="290" height="245" alt="">
+      <span class="product-category"></span>
+      <p class="product-name"></p>
+      <p class="product-description"></p>
+      <span class="product-compound">Состав:</span>
+        <ul class="product-compound-list"></ul>
+        <div class="product-price-container">
+          <span class="product-price-label">Цена</span>
+          <span class="product-price"></span>
+        </div>
+    </li>
+  </template>
 
 <!-- Уровень 2: Создание формы -->
 
-<form class="registration-form" id="registration-form">
+<form class="registration-form" id="regForm">
   <label for="firstName">Имя:</label>
   <input type="text" id="firstName" name="firstName" placeholder="Имя" required>
   <label for="lastName">Фамилия:</label>
@@ -144,13 +144,13 @@
 
 <!-- Уровень 3: Создать кнопку аутентификация -->
 
-<button class="auth-btn" type="submit">Аутентификация</button>
-<div class="modal">
+<button class="auth-btn" id="openModalBtn" type="submit">Аутентификация</button>
+<div class="modal" id="modal">
   <div class="overlay"></div>
-  <div class="modal-content">
-    <button class="close-btn">&times;</button>
+  <div class="modal-content" id="checkModalBtn">
+    <button class="close-btn" id="closeModalBtn">&times;</button>
     <h2>Вход в систему</h2>
-    <form id="loginForm">
+    <form id="loginForm" class="isOpen">
       <label for="login" class="auth-label">Логин:</label>
       <input type="text" id="login" name="login" class="auth-input" required>
       <label for="password" class="auth-label">Пароль:</label>
@@ -163,41 +163,36 @@
 
 <!-- Уровень 1: Создание footer -->
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-left">
-      <h1 class="footer-title">Product Cards</h1>
-      <p class="footer-description">У Нас Самые Лучшие Продукты Для Кожи!</p>
-      <div class="footer-icons">
-        <img src="/assets/tg.svg" class="icon-tg"> 
-        <img src="/assets/vk.svg" class="icon-vk">
-      </div>
-    </div>
-    <form class="form" id="email-form">
-      <p class="form-title">Подпишись на наши акции:</p>
-        <div class="form-input-btn">
-          <input class="form-input" placeholder="Введи email..." name="email" type="email" id="email" required>
-          <hr class="line-btn">
-          <button class="form-button" type="submit">Подписаться</button>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h1 class="footer-title">Product Cards</h1>
+        <p class="footer-description">У Нас Самые Лучшие Продукты Для Кожи!</p>
+        <div class="footer-icons">
+          <img src="/assets/tg.svg" class="icon-tg"> 
+          <img src="/assets/vk.svg" class="icon-vk">
         </div>
-      <hr class="line-website">
-      <p class="website">www.product-cards©all right reserve</p>
-    </form>
-    <nav class="footer-right">
-      <span class="footer-right-title">Быстрые ссылки</span>
-      <ul class="social-links">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-  <script src="main.js"></script>
-  <script src="homework-5.js"></script>
-  <script src="homework-6.js"></script>
-  <script type="module" src="homework-7.js"></script>
-  <script type="module" src="homework-8.js"></script>
-  <script src="homework-9.js"></script>
+      </div>
+      <form class="form" id="email-form">
+        <p class="form-title">Подпишись на наши акции:</p>
+          <div class="form-input-btn">
+            <input class="form-input" placeholder="Введи email..." name="email" type="email" id="email" required>
+            <hr class="line-btn">
+            <button class="form-button" type="submit">Подписаться</button>
+          </div>
+        <hr class="line-website">
+        <p class="website">www.product-cards©all right reserve</p>
+      </form>
+      <nav class="footer-right">
+        <span class="footer-right-title">Быстрые ссылки</span>
+        <ul class="social-links">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
