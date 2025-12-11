@@ -1,7 +1,6 @@
 export class Form {
   constructor(formId) {
     this.form = document.getElementById(formId);
-    this.inputs = this.form.querySelectorAll('input, select, textarea');
   }
 
   getValues() {
