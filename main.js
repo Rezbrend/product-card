@@ -8,7 +8,7 @@ import {Modal} from './homework-10/modal.js';
 import {Form} from './homework-10/form.js';
 import {Car, GybridCar} from './homework-10/car.js';
 import {Cafe} from './homework-11/Cafe.js'
-import {TurkishTea} from './homework-11/Drink.js'
+import {Tea} from './homework-11/Drink.js'
 import {Coffee} from './homework-11/Drink.js'
 import {Cocktail} from './homework-11/Drink.js'
 
@@ -83,11 +83,11 @@ bmw.refuel()
 // Домашнее задание №11:
 
 const cafe = new Cafe('Сказка', 'ул. Сенная, д. 2, г. Москва');
-const turkishTea = new TurkishTea('Rize', 100, 500, 'Турции')
+const tea = new Tea('Rize', 100, 500, 'Турции')
 const coffee = new Coffee('Капучино', 200, 350,'молотых зёрен', 'кокосовым молоком')
 const cocktail = new Cocktail('Брауни', 400, 600,'клубничным мороженым', '2-мя кубиками льда')
 
 cafe.getInfoCafe();
-cafe.orderDrink(turkishTea);
+cafe.orderDrink(tea);
 cafe.orderDrink(coffee);
 cafe.orderDrink(cocktail);

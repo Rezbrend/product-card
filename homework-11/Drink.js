@@ -30,7 +30,7 @@ class Drink {
   }
 }
 
-export class TurkishTea extends Drink {
+export class Tea extends Drink {
   constructor(name, size, price, countryProduction, temperature = 70) {
     super(name, size, price, temperature)
     this.countryProduction = countryProduction
