@@ -9,27 +9,27 @@ export class Modal {
     
   }
   
-  closeButtonHandler = () => {
+  handleClose = () => {
     this.close();
   };
 
   open() {
     this.modal.classList.add('modal-showed');
     this.overlay.classList.add('overlay-showed');
-    this.closeButton.addEventListener('click', this.closeButtonHandler)
+    this.closeButton.addEventListener('click', this.handleClose)
 
     if (this.shouldCloseOnOverlay) {
-      this.overlay.addEventListener('click', this.closeButtonHandler)
+      this.overlay.addEventListener('click', this.handleClose)
     }
   }
 
   close() {
     this.modal.classList.remove('modal-showed');
     this.overlay.classList.remove('overlay-showed');
-    this.closeButton.removeEventListener('click', this.closeButtonHandler)
+    this.closeButton.removeEventListener('click', this.handleClose)
 
     if (this.shouldCloseOnOverlay) {
-      this.overlay.removeEventListener('click', this.closeButtonHandler)
+      this.overlay.removeEventListener('click', this.handleClose)
     }
   }
 
