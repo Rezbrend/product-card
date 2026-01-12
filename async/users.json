@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "img": "vesta",
+      "id": 1,
+      "name": "Олег",
+      "surname": "Иванов",
+      "email": "oleg333@mail.ru",
+      "age": 20
+    },
+    {
+      "img": "lamba",
+      "id": 2,
+      "name": "Пётр",
+      "surname": "Борисов",
+      "email": "borisov999@mail.ru",
+      "age": 30
+    },
+    {
+      "img": "bmw",
+      "id": 3,
+      "name": "Дмитрий",
+      "surname": "Кулигин",
+      "email": "kulig888@mail.ru",
+      "age": 40
+    }
+  ]
+}
